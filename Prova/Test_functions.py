@@ -27,6 +27,7 @@ def test_dividir(calculo):
     assert calculo.dividir(1, 2) == 0.5
     assert calculo.dividir(3, 2) == 1.5
     assert calculo.dividir(8, 2) == 4
+    
     with pytest.raises(ValueError):  # Cenário negativo
         calculo.dividir(6, 0)
     
